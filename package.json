@@ -17,8 +17,7 @@
   },
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "node src/index.js",
-    "build": "node src/index.js"
+    "start": "node src/index.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.18"
