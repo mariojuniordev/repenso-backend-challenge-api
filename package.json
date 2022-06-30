@@ -2,6 +2,9 @@
   "name": "desafio-backend",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
@@ -12,7 +15,8 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "build": "next build"
   },
   "devDependencies": {
     "nodemon": "^2.0.18"
