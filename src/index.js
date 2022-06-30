@@ -2,10 +2,10 @@ const db = require('../db.json')
 const express = require('express');
 const cors = require('cors');
 const { v4: uuidv4 } = require('uuid');
+require('dotenv').config();
 /* const fs = require('fs'); */
 
 const app = express();
-const port = 8080;
 
 app.use(cors());
 app.use(express.json());
@@ -93,4 +93,4 @@ app.get('/top10', (_, res) => {
   return res.status(200).json(topTen);
 })
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(process.env.PORT, () => console.log(`Listening on port ${process.env.PORT}`));
